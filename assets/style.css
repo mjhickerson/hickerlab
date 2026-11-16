@@ -1,0 +1,119 @@
+/* the hickerlab
+   Layout idea: one plain column about 40rem wide, serif for reading,
+   typewriter face for dates and labels. Nothing slick. */
+
+:root {
+  --paper: #fbfcf9;
+  --ink: #1d2422;
+  --muted: #5f6a66;
+  --rule: #d3dad4;
+  --accent: #0d6b5f;   /* rockweed green, used for links */
+  --wash: #edf1ec;     /* quiet fill behind photos and the current nav item */
+  --font-body: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-label: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+img { max-width: 100%; height: auto; }
+
+/* ---------- header ---------- */
+
+.site-header { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 2rem; }
+
+.brand { display: flex; align-items: center; gap: 1rem; color: inherit; text-decoration: none; }
+.brand .logo { width: 108px; height: auto; flex: none; mix-blend-mode: multiply; }  /* multiply lets the drawing's white paper melt into the page */
+.brand-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.site-title { font-family: var(--font-label); font-weight: 500; font-size: 1.6rem; line-height: 1.1; letter-spacing: -0.01em; }
+.tagline { font-family: var(--font-label); font-size: 0.78rem; line-height: 1.45; color: var(--muted); }
+
+nav { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; margin-top: 1.25rem; font-family: var(--font-label); font-size: 0.85rem; }
+nav a { color: var(--ink); text-decoration: none; padding: 0.2rem 0.5rem; border-radius: 2px; margin-left: -0.5rem; margin-right: 0.5rem; }
+nav a:hover { text-decoration: underline; }
+nav a[aria-current="page"] { background: var(--wash); }
+
+/* ---------- text ---------- */
+
+h1, h2, h3 { text-wrap: balance; line-height: 1.25; }
+h2 { font-size: 1.4rem; font-weight: 600; margin: 2.75rem 0 0.75rem; }
+h3 { font-family: var(--font-label); font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 2rem 0 0.5rem; }
+main > :first-child { margin-top: 0; }
+p { margin: 0 0 1rem; }
+ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+/* ---------- news lists: the bold date at the start of each item becomes a small label ---------- */
+
+#news + ul,
+.page-news-archive ul { list-style: none; padding-left: 0; }
+
+#news + ul li,
+.page-news-archive li { margin-bottom: 1rem; }
+
+#news + ul li > strong:first-child,
+.page-news-archive li > strong:first-child {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* ---------- people: a photo at the start of an entry sits to its left ---------- */
+
+.page-people p { overflow: hidden; }
+.page-people p > img:first-child {
+  float: left;
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: cover;
+  margin: 0.3rem 1.1rem 0.5rem 0;
+  background: var(--wash);
+  border-radius: 2px;
+}
+/* keep the text in its own column beside the photo, instead of wrapping under it */
+@supports selector(:has(*)) {
+  .page-people p:has(> img:first-child) { position: relative; padding-left: 7.6rem; min-height: 7.1rem; }
+  .page-people p:has(> img:first-child) > img:first-child { position: absolute; left: 0; top: 0.3rem; float: none; margin: 0; }
+}
+.page-people h2 + p, .page-people p + p { margin-top: 1.25rem; }
+.page-people ul { font-size: 1rem; }
+
+/* ---------- footer ---------- */
+
+.site-footer { border-top: 1px solid var(--rule); margin-top: 3.5rem; padding-top: 1rem; font-family: var(--font-label); font-size: 0.72rem; color: var(--muted); }
+.site-footer p { margin: 0; }
+
+@media (max-width: 420px) {
+  body { font-size: 1.05rem; }
+  .site-title { font-size: 1.35rem; }
+  .brand .logo { width: 84px; }
+  .page-people p > img:first-child { width: 5rem; height: 5rem; }
+  @supports selector(:has(*)) {
+    .page-people p:has(> img:first-child) { padding-left: 6rem; min-height: 5.6rem; }
+  }
+}

@@ -1,0 +1,13 @@
+title: the hickerlab
+description: Community population genetics at the City College of New York and the CUNY Graduate Center
+markdown: kramdown
+
+# Every page uses the one layout in _layouts/default.html
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
