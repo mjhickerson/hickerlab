@@ -28,7 +28,7 @@ Contributors: Isaac Overcast, Wen Huang, Yan Qi, Naoki Takebayashi, Eli Stahl, X
 
 ## Teaching
 
-- Anthropological Genomics (BIO/ANTH 351; CCNY, Fall 2026)
+- Anthropological Genomics of Dogs (BIO/ANTH 351; CCNY, Fall 2026)
 - Population Genomic Inference of Demographic History (CUNY Graduate Center, Fall 2025)
 - Anthropological Genomics of Dogs (CCNY, Spring 2025)
 - Ecology and Evolution (Bio 228; CCNY, Fall 2023)
