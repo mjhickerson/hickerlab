@@ -16,10 +16,11 @@ Some of what we are working on now:
 - Gene flow and divergence between sympatric lineages of the sea anemone *Phymactis papillosa* along the Pacific coast, from Mexico to Chile.
 - Whole-genome population genomics of periwinkles (*Littorina*) and rockweed (*Ascophyllum nodosum*) across the wave-exposure gradient of the Maine intertidal.
 - Genome-environment associations across 27 co-distributed taxa in the Brazilian Atlantic Forest, with Ana Carnaval's lab ([paper](https://doi.org/10.1111/mec.70545)).
-- MESS, the Massive Eco-Evolutionary Synthesis Simulator, a joint model of species abundances, genetic diversity, and trait diversity for whole communities.
+- [MESS](teaching-software.html#software) (Massive Eco-evolutionary Synthesis Simulations), a joint model of species abundances, genetic diversity, and trait diversity for whole communities.
 
 ## News
 
+- **October 2026.** Launched [Phylodiet](https://mjhickerson.github.io/phylodiet/app/phylodiet.html), a web app that scores a meal by the phylogenetic diversity of what's on the plate.
 - **October 2026.** New paper led by Laura Bertola, with the Carnaval lab and a large team of Brazilian collaborators: [genome-environment associations with contemporary and historical climate across 27 Atlantic Forest taxa](https://doi.org/10.1111/mec.70545), in *Molecular Ecology*.
 - **June 2025.** Esther Aruti presented a poster on the recombination landscape of *Asterias* sea star genomes, and Yamaly Barragán presented on species delimitation, demographic history, and color polymorphism in the sea anemone *Phymactis papillosa*, both at the Evolution meeting in Athens, Georgia.
 - **October 2023.** Lab dinner in Astoria to welcome Yamaly and celebrate two new papers led by Connor and Melina.

@@ -24,6 +24,17 @@ title: Teaching & Software
 
 ## Software
 
+**Phylodiet.** A web app that scores a meal by the phylogenetic diversity of what's on the plate, using a dated tree of about 3,300 edible species.  
+[Try it](https://mjhickerson.github.io/phylodiet/app/phylodiet.html) · [Code and data](https://github.com/mjhickerson/phylodiet)
+
+**MESS (Massive Eco-evolutionary Synthesis Simulations).** A model of community assembly that jointly predicts species abundances, genetic diversity, and trait values. Led by Isaac Overcast, with Megan Ruffley, Mike Hickerson, Andy Rominger, and collaborators.  
+[Code](https://github.com/messDiv/MESS) · [Documentation](https://pymess.readthedocs.io/) · [Paper](https://doi.org/10.1111/1755-0998.13514)
+
+**PTA (Phylogeographic Temporal Analysis).** Comparative phylogeography from whole-genome or SNP data across co-distributed species. By Isaac Overcast.  
+[Code](https://github.com/isaacovercast/PTA) · [Documentation](https://pta.readthedocs.io/en/latest/)
+
+### Older software
+
 **msBayes.** Hierarchical approximate Bayesian computation (HABC) for comparative phylogeographic inference across many taxa. It tests hypotheses and estimates hyper-parameters describing how consistently co-distributed taxon pairs share divergence or colonization times and biogeographic histories. MTML-msBayes is the multi-taxa, multi-locus version, with rate heterogeneity across loci.  
 [Download](http://msbayes.sourceforge.net/) · [Manual](https://docs.google.com/document/d/15heQlz60cGe6GWKcXqf1AIYMBZ6p2sKuGct-EoEHiNU/edit?usp=sharing) · [Installation guide](https://docs.google.com/document/d/1enMQaogxOs0RppAmE8KcGU3nNjzotuiycAl6I1s0KYg/edit?usp=sharing)  
 Contributors: Isaac Overcast, Wen Huang, Yan Qi, Naoki Takebayashi, Eli Stahl, Xiaoou Xie, and Mike Hickerson.
