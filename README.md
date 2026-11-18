@@ -6,7 +6,7 @@ Each page of the site is one text file:
 |---|---|
 | Home (welcome, research, news, contact) | `index.md` |
 | People | `people.md` |
-| Teaching & Software | `teaching-software.md` |
+| Software & Teaching | `teaching-software.md` |
 | Older news | `news-archive.md` |
 
 ## To change something
