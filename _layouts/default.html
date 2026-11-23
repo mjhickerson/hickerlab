@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="wrap">
+<div class="wrap wrap-top">
 
 <header class="site-header">
   <a class="brand" href="./">
@@ -31,8 +31,10 @@
   </nav>
 </header>
 
+</div>
+
 <figure class="banner" id="banner">
-  <noscript><img src="images/banners/{{ site.data.banners[0].file }}" alt="{{ site.data.banners[0].caption | escape }}" width="1400" height="350"></noscript>
+  <noscript><img src="images/banners/{{ site.data.banners[0].file }}" alt="{{ site.data.banners[0].caption | escape }}" width="2000" height="500"></noscript>
 </figure>
 <script>
 (function () {
@@ -44,11 +46,13 @@
   var img = document.createElement('img');
   img.src = 'images/banners/' + p[0];
   img.alt = p[1] ? 'Field photo: ' + p[1] : 'Field photo';
-  img.width = 1400; img.height = 350;
+  img.width = 2000; img.height = 500;
   fig.appendChild(img);
   if (p[1]) { var cap = document.createElement('figcaption'); cap.textContent = p[1]; fig.appendChild(cap); }
 })();
 </script>
+
+<div class="wrap wrap-rest">
 
 <main class="page-{{ page.title | slugify }}">
 {{ content }}

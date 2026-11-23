@@ -56,7 +56,9 @@ nav a[aria-current="page"] { background: var(--wash); }
 
 /* ---------- photo strip under the menu ---------- */
 
-.banner { margin: 0 0 2rem; }
+.wrap-top { padding-bottom: 0; }
+.wrap-rest { padding-top: 0; }
+.banner { max-width: 64rem; margin: 0 auto 2rem; padding: 0 1.25rem; }  /* wider than the text column, so panoramas get some room */
 .banner img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 1; object-fit: cover; border-radius: 2px; background: var(--wash); }
 .banner figcaption { margin-top: 0.35rem; font-family: var(--font-label); font-size: 0.72rem; color: var(--muted); text-align: right; }
 
