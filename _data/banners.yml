@@ -1,0 +1,4 @@
+# Photos for the strip under the menu. One is picked at random each time a page loads.
+# To add one: put the picture in images/banners/ and add two lines here.
+- file: scotland.jpg
+  caption: Scotland

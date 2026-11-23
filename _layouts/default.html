@@ -31,6 +31,25 @@
   </nav>
 </header>
 
+<figure class="banner" id="banner">
+  <noscript><img src="images/banners/{{ site.data.banners[0].file }}" alt="{{ site.data.banners[0].caption | escape }}" width="1400" height="350"></noscript>
+</figure>
+<script>
+(function () {
+  // One field photo, picked at random on each page load. The list comes from _data/banners.yml.
+  var photos = [{% for b in site.data.banners %}[{{ b.file | jsonify }}, {{ b.caption | jsonify }}],{% endfor %}];
+  if (!photos.length) return;
+  var p = photos[Math.floor(Math.random() * photos.length)];
+  var fig = document.getElementById('banner');
+  var img = document.createElement('img');
+  img.src = 'images/banners/' + p[0];
+  img.alt = p[1] ? 'Field photo: ' + p[1] : 'Field photo';
+  img.width = 1400; img.height = 350;
+  fig.appendChild(img);
+  if (p[1]) { var cap = document.createElement('figcaption'); cap.textContent = p[1]; fig.appendChild(cap); }
+})();
+</script>
+
 <main class="page-{{ page.title | slugify }}">
 {{ content }}
 </main>
