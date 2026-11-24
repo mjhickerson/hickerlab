@@ -2,7 +2,22 @@
 title: News archive
 ---
 
-Older lab news, 2012 to 2018. [Back to recent news](./).
+Older lab news, 2012 to 2025. [Back to recent news](./).
+
+## 2025
+
+- **June 2025.** Esther Aruti presented a poster on the recombination landscape of *Asterias* sea star genomes, and Yamaly Barragán presented on species delimitation, demographic history, and color polymorphism in the sea anemone *Phymactis papillosa*, both at the Evolution meeting in Athens, Georgia.
+
+## 2023
+
+- **October 2023.** Lab dinner in Astoria to welcome Yamaly and celebrate two new papers led by Connor and Melina.
+- **May 2023.** Melina Giakoumis received her PhD and started as assistant director of the Institute for Comparative Genomics at the AMNH.
+
+## 2019
+
+- **June 2019.** NSF funding for "A Rules of Life Engine (RoLE) Model to Uncover Fundamental Processes Governing Biodiversity," a collaboration led by Andy Rominger at the Santa Fe Institute.
+- **March 2019.** [New paper](https://doi.org/10.1111/jbi.13541) from Isaac Overcast, and a visit and seminar from his ipyrad collaborator Deren Eaton.
+- **February 2019.** Team MESS met at the Santa Fe Institute: Megan Ruffley, Isaac Overcast, Mike Hickerson, James Rosindell, and Andy Rominger. [More from SFI](https://www.santafe.edu/news-center/news/sketching-rules-life-developing-model-biodiversity).
 
 ## 2018
 
